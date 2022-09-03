@@ -1,0 +1,129 @@
+.margin_all {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;}
+
+/* img*/
+
+.icons {
+        width: 12px;
+        margin-right: 10px;}
+
+.img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;}
+
+.creator {
+        display: flex;
+        align-items: center;
+        padding-right: 20px;}
+
+.picture {
+        border-radius: 100%;
+        background-color: rgb(190, 190, 190);
+        width: 100px;
+        margin-right: 20px;}
+
+/* table*/
+
+table {        
+        margin-top: 20px;
+        border-collapse: collapse;
+        width: 100%;}
+    
+td{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        text-align: left;}
+
+.white {
+        background-color: white;
+        padding-top: 4px;
+        padding-bottom: 4px;}
+
+.odd {
+        background-color: var(--light-gray);
+        padding-top: 4px;
+        padding-bottom: 4px;}
+
+.trWidth {
+        display: flex;}
+
+/* recipe infos*/
+
+.info1 {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;}    
+
+.info2 {
+        margin-right: 20px;
+        background-color: var(--light-gray);
+        border-radius: 10px;
+        padding: 10px;}
+
+/*amount*/    
+
+.amount {
+        display: flex;}
+              
+.margin_amount {
+        padding-right: 20px;
+        display: flex;
+        align-items: center;}
+
+.hide {
+        display: none;}        
+
+/*button*/    
+
+input {
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-radius: 3px;}
+
+@media(max-width: 500px) {
+
+.info1 {
+        display: flex;
+        flex-direction: column;}
+
+.info2 {
+        margin-top: 15px;
+        text-align: center;
+        margin-right: 0;}
+
+h2 {
+        text-align: center;}
+
+h3 {
+        text-align: center;}
+
+p{
+        text-align: justify;}
+
+.creator {
+        flex-direction: column;
+        padding: 0;}
+            
+.picture{
+        margin: 0;}
+
+.amount {
+        flex-direction: column;
+        align-items: center;}
+        
+.margin_amount{
+        margin-top: 10px;
+        margin-bottom: 10px;}
+
+@media(max-width: 420px) {
+
+.info1{
+        margin-top: 15px;
+        margin-bottom: 15px;}}}

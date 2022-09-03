@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt | Rezepte fürs Kochen und Backen</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styling/style.css">
+    <link rel="stylesheet" href="./styling/header.css">
+    <link rel="stylesheet" href="./styling/main.css">
+    <link rel="stylesheet" href="./styling/footer.css">
+    <link rel="stylesheet" href="./styling/slideshow.css">
+    <script defer src="./scripts/recipes.js"></script>
+    <script defer src="./scripts/slideshow.js"></script>
+    <script defer src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div w3-include-html="./templates/header.html"></div>
+    </header>
+
+    <main>
+        <div class="body">
+            <div class="slideshow">
+                <div class="slide">
+                    <img src="./img/croissant.jpg" alt="Croissants" class="slide-img" id="slideshow-img">
+                    <div class="slide-textarea">
+                        <h3 class="slide-headline" id="slideshow-header">Leckere Croissants</h3>
+                        <p class="slide-text" id="slideshow-oneliner">
+                            Ein luftiges Gebäck aus Frankreich!
+                        </p>
+                    </div>
+                </div>
+        
+        
+                <div class="slide">
+                    <img src="./img/salad.jpg" alt="Veganer Nudelsalat" class="slide-img">
+                    <div class="slide-textarea">
+                        <h3 class="slide-headline">Veganer Nudelsalat</h3>
+                        <p class="slide-text">
+                            Dieser leckere Nudelsalat ist komplett Vegan!
+                        </p>
+                    </div>
+                </div>
+        
+        
+                <div class="slide">
+                    <img src="./img/tomatemozarella.jpg" alt="Tomate Mozarella Salat" class="slide-img">
+                    <div class="slide-textarea">
+                        <h3 class="slide-headline">Tomate Mozarella Salat</h3>
+                        <p class="slide-text">
+                            Unser Geheimtipp für die heissen Tage des Jahres!
+                        </p>
+                    </div>
+                </div>
+                <a class="arrow arrow-left" onclick="toggleIndex(-1)"><span>&#10094;</span></a>
+                <a class="arrow arrow-right" onclick="toggleIndex(1)"><span>&#10095;</span></a>
+                <ol class="indicatorlist">
+                    <li class="indicator" onclick="chooseIndex(0)">&#8226;</li>
+                    <li class="indicator" onclick="chooseIndex(1)">&#8226;</li>
+                    <li class="indicator" onclick="chooseIndex(2)">&#8226;</li>
+                </ol>
+                
+            </div>
+            
+        </div>
+
+        <div class="chooseRecipeButton">
+            <button class="button" onclick="chooseRecipe()">Zum Rezept</button>
+        </div>
+        <div class="more-recipes bg-gray">
+            <div class="h2header">
+                <h2>Lust auf was Neues?</h2>
+            </div>
+            <div class="example-recipes" id="example-recipes">
+        
+            </div>
+        </div>
+        
+        <div class="h2header">
+            <h2>Ordnung ist das halbe Leben</h2>
+        </div>
+        <div class="blog-container">
+            <span class="blog-text">
+                <p>
+                    Egal ob du eine neue Küche planst oder ob du deine bestehende Küche optimieren willst.
+                    Überlege dir, wovon du wieviel hast: Hast du mehr Vorräte? Lebensmittel? Geschirr?
+                    Töpfe, Pfannen? Backzubehör? Schreib dir alles auf und plan deine Küche auf Papier vor.
+                    So kannst du immer wieder Änderungen vornehmen, bis dir alles gefällt und du alles untergebracht hast. <br>
+                    <br>
+                    Bevor es an das Einräumen geht, solltest du ausmisten. Das heißt, in die Küche gehört nur das, was du
+                    wirklich dort brauchst. Trenne dich von Gegenständen, die du besitzt, aber nicht nutzt und mache anderen
+                    eine Freude damit. Saisonartikel, die die nur wenige Male im Jahr benutzt, wie z.B. ein Raclette Grill
+                    solltest du im Keller, in einem Vorratsraum oder möglichst weit oben in der Küche aufbewahren.
+                </p>
+            </span>
+            <img src="./img/blogimg.jpg" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <div w3-include-html="./templates/footer.html"></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt | Kontakt</title>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styling/style.css">
+    <link rel="stylesheet" href="./styling/header.css">
+    <link rel="stylesheet" href="./styling/contact.css">
+    <link rel="stylesheet" href="./styling/footer.css">
+    <script defer src="./scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div w3-include-html="./templates/header.html"></div>
+    </header>
+
+    <main class="container">
+        <divc class="contact-container">
+            <h2>Schreiben Sie uns eine Nachricht</h2>
+            <p>Haben Sie eine Frage oder wollen uns ein Feedback zu den Rezepten geben? Wir würden gerne von Ihnen
+                hören. Senden Sie uns einfach eine Nachricht und wir werden Ihnen so schnell wie möglich antworten.</p>
+            <form action="https://gruppe-286.developerakademie.net/kochwelt_group/scripts/send_mail.php" method="post">
+                <h3>Dein Name*:</h3>
+                <input type="text" name="name" required minlength="5">
+                <h3>E-Mail Adresse:</h3>
+                <input type="email" name="email">
+                <h3>Deine Nachricht an uns*:</h3>
+                <textarea name="message" required minlength="20"></textarea>
+                <button type="submit" class="button">Nachricht senden</button>
+            </form>
+            </div>
+
+    </main>
+
+    <footer>
+        <div w3-include-html="./templates/footer.html"></div>
+    </footer>
+</body>
+
+</html>
